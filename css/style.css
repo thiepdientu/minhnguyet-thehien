@@ -923,37 +923,26 @@ main{
   }
 
   /* ALBUM */
-
-.gallery {
-    margin-top: 40px;
+.album {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    gap: var(--gap);
- }
-.album-item img{
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    /* border-radius: 12px; */
-    object-position: center 30%;
+    padding-bottom: 100px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
-.album-slide {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
 
-  .album-slide .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 50%;
-    height: auto;
-  }
+.album-item {
+    /* border-radius: 8px; */
+    overflow: hidden;
+}
 
-  .album-slide .swiper-slide img {
-    display: block;
+.album-item img {
+    transition: .3s;
+    object-fit: cover;
+    object-position: center;
     width: 100%;
-  }
+    height: 100%;
+    border-radius: 15px;
+}
   /* TIN NHẮN */
 .input-group {
     display: flex;
